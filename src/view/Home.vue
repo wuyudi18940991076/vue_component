@@ -10,12 +10,12 @@
 </template>
 
 <script>
-import MyMenu from "../components/menu";
-import MyHeader from "../components/header";
+import MyMenu from '../components/menu'
+import MyHeader from '../components/header'
 export default {
-  name: "home",
+  name: 'home',
   components: { MyMenu, MyHeader }
-};
+}
 </script>
 <style>
 #home {
