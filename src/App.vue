@@ -1,9 +1,6 @@
 <template>
   <div id="app">
-    <div class="appclass">
-      <my-menu></my-menu>
-      <my-header></my-header>
-    </div>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -16,7 +13,5 @@ export default {
 }
 </script>
 <style>
-.appclass {
-  display: flex;
-}
+
 </style>

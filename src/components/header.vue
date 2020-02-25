@@ -133,20 +133,6 @@ export default {
 .hahahha {
   background-color: red !important;
 }
-</style>
-<style>
-/* * {
-  padding: 0;
-  margin: 0;
-}
-html,
-body {
-  width: 100%;
-}
-.myHeader .my_header {
-  font-size: 0;
-  width: 100%;
-} */
 .el-menu.el-menu--horizontal {
   position: absolute;
   top: 0;

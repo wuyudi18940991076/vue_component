@@ -34,12 +34,6 @@
     </div>
   </div>
 </template>
-<style>
-* {
-  margin: 0;
-  padding: 0;
-}
-</style>
 <script>
 export default {
   name: 'myMenu',
@@ -203,10 +197,6 @@ export default {
 }
 </script>
 <style type="text/css">
-html,
-body {
-  width: 100%;
-}
 .myMenu .el-menu--collapse {
   position: relative;
 }

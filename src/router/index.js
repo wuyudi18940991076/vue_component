@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import App from '@/App.vue'
+import Home from '../view/home'
 import ocComponent from '@/view/oc_component.vue'
 import ocComponent2 from '@/view/oc_component2.vue'
 import ocComponent3 from '@/view/oc_component3.vue'
@@ -14,8 +14,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'App',
-      component: App
+      name: 'home',
+      component: Home
     },
     {
       path: '/ocComponent',
