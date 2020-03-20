@@ -1,31 +1,38 @@
 <template>
-  <div class="allHeader">
-    <div class="left">
-      <my-menu></my-menu>
+  <div class="allheader">
+    <div id="allheader">
+      <div class="left">
+        <my-menu></my-menu>
+      </div>
+      <div class="right">
+        <my-header @kkkk="llal($event)">{{newNumber}}</my-header>
+      </div>
     </div>
-    <div class="right">
-      <my-header></my-header>
-    </div>
+    {{newNumber}}
   </div>
 </template>
+
 <script>
-import MyMenu from './menu'
-import MyHeader from './header'
+import MyMenu from '../components/menu'
+import MyHeader from '../components/header'
 export default {
-  name: 'allHeader',
+  name: 'allheader',
   components: { MyMenu, MyHeader },
   data () {
     return {
-
+      newNumber: '父组件'
     }
   },
   methods: {
-
+    llal (data1) {
+      this.newNumber = data1
+      console.log(11, data1)
+    }
   }
 }
 </script>
 <style>
-.allHeader {
+#allheader {
   display: flex;
 }
 .left {

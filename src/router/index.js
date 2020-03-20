@@ -7,6 +7,8 @@ import ocComponent3 from '@/view/oc_component3.vue'
 import header from '@/components/header.vue'
 import allHead from '@/components/allHead.vue'
 import menu from '@/components/menu.vue'
+import popView from '@/components/popup.vue'
+import HelloWorld from '@/view/HelloWorld.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -46,6 +48,16 @@ export default new Router({
       path: '/allHead',
       name: 'allHead',
       component: allHead
+    },
+    {
+      path: '/popView',
+      name: 'popView',
+      component: popView
+    },
+    {
+      path: '/hello',
+      name: 'HelloWorld',
+      component: HelloWorld
     }
   ]
 })

@@ -22,7 +22,7 @@
 </template>
 <script>
 export default {
-  name: 'header',
+  name: 'myHeader',
   props: { 'message': String },
   data () {
     return {
@@ -116,15 +116,19 @@ export default {
         value: 'two',
         label: '로그아웃'
       }],
-      value: ''
+      value: '',
+      dataSon: '子组件'
     }
+  },
+  created () {
+    // console.log(this.dataSon)s
   },
   methods: {
     handleClick (tab, event) {
-      console.log(tab, event)
+      console.log('这是子组件', this.dataSon)
+      this.$emit('kkkk', this.dataSon)
     },
     handleSelect (key, keyPath) {
-      console.log(key, keyPath)
     }
   }
 }
@@ -291,7 +295,7 @@ export default {
   height: 20px;
   background: url("../assets/images/ic-arrow-solid-bottom.svg") no-repeat 100%;
 }
-.el-tabs--top .el-tabs__item.is-top:last-child{
+.el-tabs--top .el-tabs__item.is-top:last-child {
   padding-right: 20px;
 }
 </style>
